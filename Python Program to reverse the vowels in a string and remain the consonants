@@ -1,0 +1,12 @@
+a=input('Enter word: ')
+l=[]
+for i in a:
+    if i in 'aeiou':
+        l.append(i)
+print(l)
+letters = list(a)
+for i in range(len(letters)):
+    if letters[i] in 'aeiou':
+        letters[i] = l.pop(-1)
+
+print(''.join(letters))
